@@ -1,8 +1,8 @@
 {
-  "title": "420m² · 院落与原水遮护 R3.5",
-  "kicker": "LIFE · CIRCULATION · ROOF ACCESS / R3",
-  "headline": "设备放边上，院子留给生活。",
-  "intro": "住宅内部保留。车库和冷库沿东边；单2000L原水罐移到净水机房东侧有遮护设备位，垃圾桶收到楼梯下，院心继续留空。",
+  "title": "420㎡农村自建房 · 正式展示版",
+  "kicker": "RURAL HOME / 2026.11",
+  "headline": "一人一狗，日常与应急兼顾。",
+  "intro": "420㎡院落，设备沿边布置，中央保留活动空间。住宅、冷库、遮护储水、备件、水电与小电车库组成完整生活方案。",
   "model": "rural-35.gltf",
   "report": "420平方米庭院与车库.html",
   "views": {
@@ -18,9 +18,9 @@
         30
       ],
       "span": 30,
-      "title": "420m²全院 / 设备沿边",
-      "text": "总地21×20m，新增东侧3m边带放直入小车库。室内保持现状；冷库和水罐正常展示，集中在边上，庭院中间不摆永久设备。",
-      "section": "ground"
+      "title": "全院总览 · 完整外观",
+      "text": "21×20m院落，住宅基底90㎡；设备集中在边上，中央约25㎡活动区。默认保留完整墙体和关闭的遮护板，可切换楼层、设备与检修视图。",
+      "section": "exterior"
     },
     "top": {
       "target": [
@@ -537,7 +537,7 @@
       "section": "ground"
     }
   },
-  "cutawayDefault": true,
+  "cutawayDefault": false,
   "waterCalc": true,
   "sunPosition": [
     -12,
@@ -935,5 +935,6 @@
       "鲜菜补充不承担主粮；活动和维修空间可以正常使用。"
     ]
   ],
-  "revision": "R3.5-shaded-water-1108"
+  "revision": "R3.5-shaded-water-1108",
+  "release": "2026.11 正式展示版"
 }
