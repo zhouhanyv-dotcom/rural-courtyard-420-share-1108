@@ -636,5 +636,37 @@
     "additional_water_reserve_credit_l": 0,
     "low_tank_stop_threshold_l_assumed": 600,
     "low_tank_threshold_is_design_assumption": true
+  },
+  "raw_shelter": {
+    "tank_xy_m": [
+      17.2,
+      17.25
+    ],
+    "roof_bounds_m": [
+      16.14,
+      16.15,
+      18.25,
+      18.35
+    ],
+    "roof_area_m2": 4.642,
+    "roof_z_low_m": 2.13,
+    "tank_top_m": 1.57,
+    "lid_vertical_clearance_m": 0.56,
+    "shade_sides": "service wall west, opaque north/south panels, normally closed openable east leaves",
+    "east_closed_lane_m": 2.53,
+    "east_open_lane_m_approx": 1.73,
+    "rainwater_yield_credit_m3": 0,
+    "food_grade_outdoor_opaque_vessel_specification_required": true,
+    "site_foundation_wind_and_freeze_verified": false,
+    "waste_bins_xy_m": [
+      [
+        1.3,
+        4.25
+      ],
+      [
+        1.3,
+        5.15
+      ]
+    ]
   }
 }
