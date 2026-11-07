@@ -66,12 +66,13 @@
     "raw_2000L",
     "irrigation_backflow_filter_regulator",
     "garden_valves",
-    "garden_drip"
+    "garden_drip",
+    "leaf_basket_W23"
   ],
   "edges": [
     [
       "rain_source",
-      "first_flush"
+      "leaf_basket_W23"
     ],
     [
       "first_flush",
@@ -176,6 +177,14 @@
     [
       "garden_valves",
       "garden_drip"
+    ],
+    [
+      "leaf_basket_W23",
+      "first_flush"
+    ],
+    [
+      "leaf_basket_W23",
+      "storm_overflow"
     ]
   ],
   "rules": [
@@ -286,5 +295,11 @@
         5.15
       ]
     ]
+  },
+  "rain_prefilter": {
+    "item": "W23",
+    "before_first_flush": true,
+    "overflow_to_storm_only": true,
+    "endpoints_checked_separately": true
   }
 }

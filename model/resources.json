@@ -1,5 +1,5 @@
 {
-  "version": "R3.5_SHADED_WATER",
+  "version": "R3.6_RAIN_PREFILTER",
   "days": 730,
   "person": 1,
   "cat_count": 0,
@@ -341,7 +341,7 @@
     "planned_initial_water_stored_l": 2600,
     "tank_and_water_quality_verified": false,
     "first_flush_and_rain_capture_final_design_verified": false,
-    "raw_tank_shade_and_screened_vents_modeled": false,
+    "raw_tank_shade_and_screened_vents_modeled": true,
     "raw_tank_food_grade_and_outdoor_rating_verified": false,
     "raw_tank_foundation_capacity_verified": false,
     "raw_shade_roof_m2_uncredited": 0,
@@ -669,5 +669,22 @@
     ],
     "east_closed_lane_m_approx": 2.4,
     "lane_note": "Approximate clear width includes gutter projection; inspect installed fittings on site."
+  },
+  "rain_prefilter": {
+    "position_m": [
+      16.45,
+      15.65,
+      1.78
+    ],
+    "screen_height_m": 1.8,
+    "handle_height_m": 1.76,
+    "clean_outlet_height_m": 1.6,
+    "tank_inlet_height_m": 1.38,
+    "drawer_pull_m": 0.37,
+    "maintenance_from_ground": true,
+    "overflow_destination": "separate storm drain, no bypass to tank",
+    "screen_mesh_exaggerated_for_visibility": true,
+    "actual_product_flow_and_storm_sizing_verified": false,
+    "yield_credit_added_l": 0
   }
 }
