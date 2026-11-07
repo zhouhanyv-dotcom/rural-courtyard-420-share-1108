@@ -1,0 +1,915 @@
+{
+  "title": "420m² · 院落与电车库 R3.4",
+  "kicker": "LIFE · CIRCULATION · ROOF ACCESS / R3",
+  "headline": "设备放边上，院子留给生活。",
+  "intro": "住宅内部保留。东侧集中车库、冷库和单2000L水罐；推车收进维修台，晾晒默认收卷，中间留出约25m²连续活动核心。",
+  "model": "rural-360.gltf",
+  "report": "420平方米庭院与车库.html",
+  "views": {
+    "overview": {
+      "target": [
+        10.5,
+        0.5,
+        -10
+      ],
+      "offset": [
+        -27,
+        35,
+        30
+      ],
+      "span": 30,
+      "title": "420m²全院 / 设备沿边",
+      "text": "总地21×20m，新增东侧3m边带放直入小车库。室内保持现状；冷库和水罐正常展示，集中在边上，庭院中间不摆永久设备。",
+      "section": "ground"
+    },
+    "top": {
+      "target": [
+        10.5,
+        0.4,
+        -10
+      ],
+      "offset": [
+        0,
+        45,
+        0.001
+      ],
+      "span": 24,
+      "title": "总平面 / 21×20m",
+      "text": "420m²总地；住宅90m²不变，新车库约20.6m²，连贯活动核心约25.27m²。",
+      "section": "ground"
+    },
+    "home": {
+      "target": [
+        5.5,
+        0.7,
+        -14
+      ],
+      "offset": [
+        15,
+        20,
+        20
+      ],
+      "span": 15.5,
+      "title": "直接看一层内部",
+      "text": "客厅、厨房、卫浴、口粮、两台故障转存冰柜和楼梯。 客厅备临时睡卧与三天易取用物资；住宅另有东侧第二出口。",
+      "section": "ground"
+    },
+    "upper": {
+      "target": [
+        5.5,
+        4,
+        -14
+      ],
+      "offset": [
+        15,
+        20,
+        20
+      ],
+      "span": 15.5,
+      "title": "直接看二层内部",
+      "text": "二层：卧室与电脑合成生活套房，床靠边；原电竞房改为阅读活动/备用休息间。两房东侧墙体完整、各有走廊门，备件间和屋顶通路保留。",
+      "section": "upper"
+    },
+    "living": {
+      "target": [
+        3.2,
+        0.7,
+        -11.6
+      ],
+      "offset": [
+        6,
+        8,
+        9
+      ],
+      "span": 6.8,
+      "title": "客厅与狗的休息位",
+      "text": "正常沙发、餐前起居和狗窝；不设置鸡、畜禽或观赏绿化。",
+      "section": "ground"
+    },
+    "kitchen": {
+      "target": [
+        3.2,
+        0.7,
+        -16.5
+      ],
+      "offset": [
+        6,
+        9,
+        9
+      ],
+      "span": 6.8,
+      "title": "厨房与餐区",
+      "text": "米面、干豆和分装肉正常做饭；冰箱、台面和灶具集中。",
+      "section": "ground"
+    },
+    "pantry": {
+      "target": [
+        8.85,
+        0.8,
+        -17
+      ],
+      "offset": [
+        5,
+        8,
+        8
+      ],
+      "span": 6.2,
+      "title": "储粮与双冰柜",
+      "text": "两台350L故障转存柜，按80%估计560L可用；190kg混合冻品分项估计476L，真实包装仍须测装。",
+      "section": "ground"
+    },
+    "wash": {
+      "target": [
+        8.85,
+        0.7,
+        -11.1
+      ],
+      "offset": [
+        5,
+        8,
+        8
+      ],
+      "span": 6.2,
+      "title": "卫生间与洗衣",
+      "text": "床、马桶、洗衣机按墙线摆放，洁污分区，不用大面积摆景。",
+      "section": "ground"
+    },
+    "service": {
+      "target": [
+        13,
+        1,
+        -17
+      ],
+      "offset": [
+        9,
+        13,
+        14
+      ],
+      "span": 10.5,
+      "title": "侧边水电机房",
+      "text": "住宅东侧服务楼：西半干电区三柜172.8kWh，东半净水；重型备机留地面，柜前留操作带。点“能源柜”可近看。",
+      "section": "ground"
+    },
+    "water": {
+      "target": [
+        14.6,
+        1.1,
+        -17.1
+      ],
+      "offset": [
+        7,
+        10,
+        9
+      ],
+      "span": 7.8,
+      "section": "ground",
+      "title": "原水 / 杂用 / 饮水分开",
+      "text": "净水间与室内饮水布置保留。原水改为东边单2000L罐，常备1800L/设计可取1600L；480L封装＋20L日用RO、300L杂用另列。"
+    },
+    "spares": {
+      "target": [
+        8.85,
+        4.2,
+        -11.5
+      ],
+      "offset": [
+        7,
+        10,
+        10
+      ],
+      "span": 7.2,
+      "section": "upper",
+      "title": "备件间 / 维修台",
+      "text": "二层40个编号箱位；逆变器、电池、制冷备机和两块太阳能备用板在楼下重型架。可打开下方备件清单查看位置。"
+    },
+    "coldroom": {
+      "target": [
+        19.77,
+        0.8,
+        -7.92
+      ],
+      "offset": [
+        -7,
+        9,
+        8
+      ],
+      "span": 7,
+      "section": "ground",
+      "title": "贴东墙冷库 / 门朝院子",
+      "text": "冷库贴东侧围墙、接在车库后侧，门朝院内；冷凝器面向开放庭院，预留散热和拆机位置。门内手动释放与冷冻容量保留。"
+    },
+    "security": {
+      "target": [
+        12,
+        1,
+        -9
+      ],
+      "offset": [
+        18,
+        22,
+        24
+      ],
+      "span": 26,
+      "section": "exterior",
+      "title": "3.2m围护 / 错位入口",
+      "text": "3.2m围护、平滑压顶、住宅及院子两路人行退路；车库另有南侧车辆门。保持机械内部释放，车库人行门通庭院。"
+    },
+    "core": {
+      "target": [
+        4.3,
+        0.8,
+        -12.2
+      ],
+      "offset": [
+        8,
+        11,
+        12
+      ],
+      "span": 8.8,
+      "section": "ground",
+      "title": "少走动 / 一层生活模式",
+      "text": "客厅沙发可临时睡卧，厨房、卫浴、狗和当天食品都在一层；床边20L饮水、3天免烹饪人狗食物、急救与收音机。无需每天上楼取物；上层书房与备件保留，非封死。"
+    },
+    "garden": {
+      "target": [
+        13.15,
+        0.7,
+        -3
+      ],
+      "offset": [
+        8,
+        11,
+        12
+      ],
+      "span": 9,
+      "section": "ground",
+      "title": "三床鲜菜 / 10.26m²",
+      "text": "保留三床鲜菜，净土10.26m²，先种两床也行；车库西侧约1.39m人行道保留，车辆从独立门直入。"
+    },
+    "utility": {
+      "target": [
+        3.9,
+        0.8,
+        -8.1
+      ],
+      "offset": [
+        9,
+        11,
+        11
+      ],
+      "span": 9,
+      "section": "ground",
+      "title": "靠墙维修台 / 推车收好",
+      "text": "维修台靠住宅南墙，工具收箱，推车折叠停在台下右侧；小冷凝回收容器在台下左侧。晾晒收卷器在西侧后角，平时不横拉线。 本检修视图移开上方棚梁供看清台下收纳；完整庭院外观保留。"
+    },
+    "roof": {
+      "target": [
+        6.7,
+        6,
+        -14
+      ],
+      "offset": [
+        17,
+        22,
+        25
+      ],
+      "span": 20,
+      "section": "roof",
+      "title": "屋顶检修 / 楼梯间剖开",
+      "text": "主屋28块、机房6块、棚顶12块，共46×200W＝9.2kWp。先划通道再排板；固定楼梯、平台、屋顶门及真实洞口齐全。检修视图切开上半楼梯间，完整外观可看真实外壳。"
+    },
+    "service_roof": {
+      "target": [
+        13,
+        3.2,
+        -17
+      ],
+      "offset": [
+        10,
+        13,
+        15
+      ],
+      "span": 11,
+      "section": "roof",
+      "title": "机房屋顶 / 二层门连接",
+      "text": "从二层储物间的门，经3级带扶手踏步到机房顶；前、后、西侧检修道贯通。机房贴住宅布置，东侧留下约1.7m检修道。"
+    },
+    "maintenance": {
+      "target": [
+        6.55,
+        5.2,
+        -16.5
+      ],
+      "offset": [
+        9,
+        13,
+        12
+      ],
+      "span": 11,
+      "section": "roof",
+      "title": "备板与检修搬运路线",
+      "text": "统一200W小板，参考1.262×0.764m、10.81kg。屋前备板柜→一层/二层固定楼梯→20级屋顶梯→西侧屋顶门；机房顶由二层东门到达，棚顶走18级固定梯。单块短边横向、长边竖向分段搬运，先做等尺寸等重实物演练，无法搬运就隔离该板等待协助。取消未经验证的两级吊装。"
+    },
+    "roof_stairs": {
+      "target": [
+        6.55,
+        5.2,
+        -16.5
+      ],
+      "offset": [
+        7,
+        11,
+        10
+      ],
+      "span": 8,
+      "section": "roof",
+      "title": "二层到屋顶楼梯",
+      "text": "新增20级固定楼梯、真实楼板洞口、平台和屋顶门。原二层前护栏已改为楼梯入口，不能让护栏挡住上楼路线。"
+    },
+    "bedroom": {
+      "target": [
+        3.2,
+        4.1,
+        -11.5
+      ],
+      "offset": [
+        0,
+        25,
+        0.001
+      ],
+      "span": 6.5,
+      "section": "upper_walls",
+      "title": "生活套房 / 四面墙俯视",
+      "text": "床靠西北侧，电脑桌/主机/显示器/椅子在南侧，衣柜靠东，房门通走廊；北侧与活动房分开。此视图只移开屋顶，完整四面墙保留。"
+    },
+    "suite": {
+      "target": [
+        3.2,
+        4.1,
+        -11.5
+      ],
+      "offset": [
+        7,
+        12,
+        8
+      ],
+      "span": 7.4,
+      "section": "upper",
+      "title": "靠边床 / 电脑套房",
+      "text": "睡觉和电脑在同一间生活套房：床靠西北侧，电脑在南侧，衣柜在东侧；留出床边、椅后与门口通路。点物品可看名称和用途。"
+    },
+    "quiet": {
+      "target": [
+        3.1,
+        4,
+        -16.6
+      ],
+      "offset": [
+        7,
+        12,
+        8
+      ],
+      "span": 7.4,
+      "section": "upper",
+      "title": "原电竞房 / 阅读活动间",
+      "text": "原电脑房改成阅读、拉伸和备用休息的房间，保留书架、轻便座椅、小桌和可收垫子；两房各有独立走廊门，不添高耗电健身设备。"
+    },
+    "energy": {
+      "target": [
+        11.5,
+        1.4,
+        -17.7
+      ],
+      "offset": [
+        9,
+        10,
+        12
+      ],
+      "span": 6.9,
+      "title": "三柜能源间 / 172.8kWh",
+      "text": "在住宅东侧服务楼的西半干区，北墙三柜各57.6kWh；柜前约1.1m操作带。此视图移开前/东墙及柜门看模块，完整外观保留。可用AC按124.4kWh算，备用9.6kWh另列。",
+      "section": "ground"
+    },
+    "airwater": {
+      "target": [
+        4.78,
+        1,
+        -10.25
+      ],
+      "offset": [
+        6,
+        9,
+        -9
+      ],
+      "span": 4.6,
+      "title": "空气制水 / 条件式补饮水",
+      "text": "候选机放一层客厅东南角干燥通风位。设定5L/日×0.6kWh/L会额外用3度电；实际产量需实测，默认保证产水0。普通除湿冷凝回收另进棚下60L非饮用桶。",
+      "section": "ground"
+    },
+    "courtyard": {
+      "target": [
+        14.7,
+        1,
+        -12.2
+      ],
+      "offset": [
+        -20,
+        22,
+        24
+      ],
+      "span": 17,
+      "title": "宽敞庭院 / 设备靠边",
+      "text": "约25.27m²活动核心，平时不放桌椅设备；聚会时可摆折叠桌椅。电烤盘等按实际产品选择露天安全位置，车和出入口不穿过聚会核心。",
+      "section": "exterior"
+    },
+    "garage": {
+      "target": [
+        19.1,
+        1,
+        -3.5
+      ],
+      "offset": [
+        -7,
+        12,
+        10
+      ],
+      "span": 8.5,
+      "title": "小电车库 / 有余电再充",
+      "text": "车辆从南侧独立入口直进直出；西侧人行门进院子，充电线回挂。家用电池保底优先，单相约1.4kW瞬时余功率起充为参考；每天2/4度是电量预算，并非全天几十瓦不断涓流。",
+      "section": "ground"
+    },
+    "tank": {
+      "target": [
+        19.85,
+        0.8,
+        -13.45
+      ],
+      "offset": [
+        -8,
+        9,
+        8
+      ],
+      "span": 6.5,
+      "title": "一个2000L原水罐",
+      "text": "东边单罐，常备1800L、设计可取1600L；盖/通气口在地面可检查，西侧低位取水。不再有第二只原水罐、大棚架和围屏。",
+      "section": "ground"
+    },
+    "septic": {
+      "target": [
+        4.4,
+        -0.7,
+        -1.7
+      ],
+      "offset": [
+        6,
+        8,
+        -8
+      ],
+      "span": 7.2,
+      "title": "化粪池是什么 / 地下剖视",
+      "text": "地下三格约5m³液体处理容积，地面只有三块齐平检修盖。沉淀和分解部分污物后，液体仍需后续处理。目标减少清掏，3–5年只是常见参考，仍要检查；不能挖深后当永久储污桶。 此处移开地面和棚梁用于解释地下结构，平时盖好。",
+      "section": "ground"
+    },
+    "waterflow": {
+      "target": [
+        15,
+        0.8,
+        -11.8
+      ],
+      "offset": [
+        -20,
+        24,
+        24
+      ],
+      "span": 23,
+      "title": "水路：水罐 → 处理 → 家用 / 滴灌",
+      "text": "青色为原水，蓝色为处理后的生活分支，绿色为菜床滴灌，棕色为污水，紫色为非饮用冷凝回收。选中水路时，埋地线穿透显示以便追踪；不是铺在院心的水管。V2在菜区东北角，三床各有开关；食用菜先确认水质，不从原水桶直接拉一根软管。",
+      "section": "ground",
+      "routeFilter": "water"
+    },
+    "powerflow": {
+      "target": [
+        12,
+        0.8,
+        -12
+      ],
+      "offset": [
+        -24,
+        27,
+        28
+      ],
+      "span": 27,
+      "title": "电路：光伏 / 储能 → 分路 → 用电",
+      "text": "橙红为光伏/电池直流功能路径，金色为交流分路。干电间有B1–B8分配板，主冷库、转存冰柜、供水与EV分开；家用优先，余电充车。高亮埋地线只为追踪，实际走线/保护/线径按设备和现场设计，不是可照接的施工电路。",
+      "section": "ground",
+      "routeFilter": "power"
+    },
+    "distribution": {
+      "target": [
+        12.8,
+        1.45,
+        -16.95
+      ],
+      "offset": [
+        -2.8,
+        4,
+        5
+      ],
+      "span": 3.8,
+      "title": "配电板近看 / 干电间东墙",
+      "text": "B1–B8板在干电间东墙，逆变器北侧，朝室内操作；这里从操作侧近看。B1冷库、B2转存柜/照明通信、B3供水、B4生活、B5大负载、B6灌溉、B7充车、B8预留。",
+      "section": "ground"
+    }
+  },
+  "cutawayDefault": true,
+  "waterCalc": true,
+  "sunPosition": [
+    -12,
+    35,
+    15
+  ],
+  "shadowSpan": 22,
+  "shadowFar": 110,
+  "lamps": [
+    {
+      "pos": [
+        3.2,
+        3.05,
+        -11.5
+      ],
+      "target": [
+        3.2,
+        0.4,
+        -11.5
+      ],
+      "intensity": 65,
+      "range": 8,
+      "outdoor": false
+    },
+    {
+      "pos": [
+        3.2,
+        3.05,
+        -16.3
+      ],
+      "target": [
+        3.2,
+        0.4,
+        -16.3
+      ],
+      "intensity": 70,
+      "range": 8,
+      "outdoor": false
+    },
+    {
+      "pos": [
+        8.8,
+        3.05,
+        -17
+      ],
+      "target": [
+        8.8,
+        0.4,
+        -17
+      ],
+      "intensity": 55,
+      "range": 8,
+      "outdoor": false
+    },
+    {
+      "pos": [
+        8.8,
+        3.05,
+        -11.2
+      ],
+      "target": [
+        8.8,
+        0.4,
+        -11.2
+      ],
+      "intensity": 40,
+      "range": 8,
+      "outdoor": true
+    },
+    {
+      "pos": [
+        6.6,
+        3.05,
+        -13.4
+      ],
+      "target": [
+        6.6,
+        0.4,
+        -13.4
+      ],
+      "intensity": 40,
+      "range": 8,
+      "outdoor": true
+    },
+    {
+      "pos": [
+        3.2,
+        6.25,
+        -11.5
+      ],
+      "target": [
+        3.2,
+        0.4,
+        -11.5
+      ],
+      "intensity": 55,
+      "range": 8,
+      "outdoor": false
+    },
+    {
+      "pos": [
+        3.2,
+        6.25,
+        -16.5
+      ],
+      "target": [
+        3.2,
+        0.4,
+        -16.5
+      ],
+      "intensity": 55,
+      "range": 8,
+      "outdoor": false
+    },
+    {
+      "pos": [
+        12.5,
+        2.8,
+        -17
+      ],
+      "target": [
+        12.5,
+        0.4,
+        -17
+      ],
+      "intensity": 55,
+      "range": 8,
+      "outdoor": true
+    },
+    {
+      "pos": [
+        15.5,
+        2.8,
+        -17
+      ],
+      "target": [
+        15.5,
+        0.4,
+        -17
+      ],
+      "intensity": 55,
+      "range": 8,
+      "outdoor": true
+    },
+    {
+      "pos": [
+        9,
+        2.8,
+        -2.5
+      ],
+      "target": [
+        9,
+        0.4,
+        -2.5
+      ],
+      "intensity": 65,
+      "range": 8,
+      "outdoor": true
+    },
+    {
+      "pos": [
+        20.72,
+        2.2,
+        -10.46
+      ],
+      "target": [
+        19.4,
+        0.1,
+        -9.8
+      ],
+      "intensity": 60,
+      "range": 8,
+      "outdoor": true
+    }
+  ],
+  "metrics": [
+    [
+      "总地 / 允许增地后",
+      420,
+      "m²"
+    ],
+    [
+      "住宅 / 内部保持",
+      "90 / 180",
+      "m²"
+    ],
+    [
+      "活动核心 / 不堆设备",
+      25.27,
+      "m²"
+    ],
+    [
+      "单原水罐 / 设计可取",
+      "2000 / 1600",
+      "L"
+    ],
+    [
+      "车库基底",
+      20.6,
+      "m²"
+    ],
+    [
+      "主电池名义 / 可用AC",
+      "172.8 / 124.4",
+      "kWh"
+    ]
+  ],
+  "warning": "420m²总地，室内保留。2000L单原水罐、沿边冷库与直入车库；家用储能保底后才安排余电充车。地下化粪处理需后续合格处理端，几年免检查不作承诺。",
+  "sources": [
+    [
+      "CDC：雨水不是天然饮用水",
+      "https://www.cdc.gov/drinking-water/about/collecting-rainwater-and-your-health-an-overview.html"
+    ],
+    [
+      "CDC：家用过滤器按污染物选型",
+      "https://www.cdc.gov/drinking-water/prevention/about-choosing-home-water-filters.html"
+    ],
+    [
+      "EPA：RO回收率和弃水",
+      "https://www.epa.gov/watersense/point-use-reverse-osmosis-systems"
+    ],
+    [
+      "FDA：冷藏冷冻温度及品质",
+      "https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety"
+    ],
+    [
+      "FDA：宠物完整主食",
+      "https://www.fda.gov/animal-veterinary/animal-health-literacy/complete-and-balanced-pet-food"
+    ],
+    [
+      "FDA：宠物食品储存",
+      "https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats"
+    ],
+    [
+      "NASA POWER：离网储能须按连续低辐照设计",
+      "https://power.larc.nasa.gov/docs/methodology/data/derived/storage/"
+    ],
+    [
+      "EPA：化粪池与最终处理是两个环节",
+      "https://www.epa.gov/septic/how-septic-systems-work"
+    ],
+    [
+      "Heatcraft：制冷散热、噪声与维护",
+      "https://assets.heatcraftrpd.com/literature/installation-and-operation-manual/condensing-units-and-packaged-systems/current/H-IM-CU.pdf"
+    ],
+    [
+      "FoodSafety.gov：冷冻时间与品质",
+      "https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts"
+    ],
+    [
+      "CDC：应急水处理",
+      "https://www.cdc.gov/water-emergency/about/index.html"
+    ],
+    [
+      "Red Cross：便携应急物资",
+      "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html"
+    ],
+    [
+      "OR-Tools：约束排布",
+      "https://developers.google.com/optimization/pack"
+    ],
+    [
+      "Shapely：几何面积与相交",
+      "https://shapely.readthedocs.io/en/stable/manual.html"
+    ],
+    [
+      "UMN：窄床与滴灌",
+      "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/raised-bed-gardens"
+    ],
+    [
+      "CDC：应急水储存与轮换",
+      "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"
+    ],
+    [
+      "EPA：雨污与油脂管理",
+      "https://www.epa.gov/septic/how-care-your-septic-system"
+    ],
+    [
+      "200W小板尺寸与重量数据表",
+      "https://www.renogy.com/cdn/shop/files/RSP200DC-ASR-G1-datasheet_2.pdf?v=14334340797311158899"
+    ],
+    [
+      "空气制水厂家参数",
+      "https://watergen.com/product-page-genny/"
+    ],
+    [
+      "EPA：空气制水与微生物维护",
+      "https://www.epa.gov/sites/production/files/2019-11/documents/awg_technical_brief_final_05nov19.pdf"
+    ],
+    [
+      "4.8kWh模块尺寸重量参考",
+      "https://en.pylontech.com.cn/products/c23/134.html"
+    ],
+    [
+      "EPA：化粪池如何工作",
+      "https://www.epa.gov/septic/how-septic-systems-work"
+    ],
+    [
+      "余电充车与最低功率参考",
+      "https://support.myenergi.com/hc/en-gb/articles/15587880239249-What-is-the-Minimum-Green-Level-MGL"
+    ],
+    [
+      "食用菜的雨水与滴灌管理",
+      "https://hgic.clemson.edu/factsheet/best-practices-for-application-of-harvested-rainwater-on-edibles/"
+    ],
+    [
+      "储能与关键负载",
+      "https://www.energy.gov/cmei/systems/solar-integration-solar-energy-and-storage-basics"
+    ]
+  ],
+  "renders": [
+    [
+      "courtyard",
+      "设备在边上，中间留连续活动空间；住宅内部保持现状。"
+    ],
+    [
+      "garage",
+      "小电车直入车库，充电桩和回挂线缆。"
+    ],
+    [
+      "tank",
+      "单个2000L原水罐，正面/低位口可达。"
+    ],
+    [
+      "septic",
+      "地下三格化粪处理示意，检查口留在地面。"
+    ],
+    [
+      "overview",
+      "420m²全院一层剖视。"
+    ],
+    [
+      "utility",
+      "靠墙维修台与折叠推车固定位置。"
+    ],
+    [
+      "coldroom",
+      "贴东墙冷库，朝院内开门。"
+    ],
+    [
+      "suite",
+      "保留原有生活套房。"
+    ],
+    [
+      "roof",
+      "固定屋顶通道和9.2kWp光伏保留。"
+    ],
+    [
+      "privacy-night",
+      "夜间遮光与按需工作灯。"
+    ]
+  ],
+  "ledger": [
+    [
+      "用地与布局",
+      "21×20=420m²；住宅90m²、水电24m²、冷库4.32m²、车库约20.6m²。",
+      "设备正常可见、沿边集中；活动核心25.27m²不设永久设备。"
+    ],
+    [
+      "单罐储水",
+      "2000L容量、1800L常备、1600L设计可取，生活70L/日约22.9天。",
+      "没有第二罐，故障先用独立封装饮水/300L杂用；水质检测与轮换仍要做。"
+    ],
+    [
+      "冻品与食品",
+      "190kg混合冻品与两台350L转存冰柜保留；常温525kg。",
+      "冷库持续供电，实际包装/温度和转存演练仍需落实。"
+    ],
+    [
+      "储能与光伏",
+      "46×200W=9.2kWp；172.8kWh名义/124.4kWh估计可用AC。",
+      "家用保底优先；备用9.6kWh和汽车电池不重复计。"
+    ],
+    [
+      "余电充车",
+      "日余2/4kWh可安排相应AC输入；按85%试算入车1.7/3.4kWh。",
+      "先满足家用负载及储能目标；瞬时功率、逆变器、保护与车辆需匹配。"
+    ],
+    [
+      "地下污水",
+      "5m³三格处理概念，三块齐平检查盖，保留通气及外部清掏。",
+      "处理出水仍需合格去向；封闭只存不排约77天就满，不是假造几年容量。"
+    ],
+    [
+      "菜区与院落",
+      "三床净土10.26m²，灌水41.04L/日为假设；推车台下、晾晒默认收起。",
+      "鲜菜补充不承担主粮；活动和维修空间可以正常使用。"
+    ]
+  ],
+  "revision": "R3.4-public-docs-1108"
+}

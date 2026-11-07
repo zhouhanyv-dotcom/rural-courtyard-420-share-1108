@@ -1,0 +1,258 @@
+{
+  "storage": {
+    "raw_nominal_l": 2000,
+    "raw_operating_l": 1800,
+    "raw_usable_l_design": 1600,
+    "raw_each_operating_l": [
+      1800
+    ],
+    "raw_each_usable_l_design": [
+      1600
+    ],
+    "misc_buffer_nominal_l": 500,
+    "misc_buffer_operating_l": 300,
+    "misc_buffer_gravity_usable_l_approx": 230,
+    "sealed_drinking_main_l": 450,
+    "sealed_drinking_core_l": 20,
+    "sealed_drinking_upper_l": 10,
+    "ro_day_l": 20,
+    "drinking_total_l": 500,
+    "sealed_drinking_total_l": 480,
+    "planned_initial_water_stored_l": 2600,
+    "tank_and_water_quality_verified": false,
+    "first_flush_and_rain_capture_final_design_verified": false,
+    "raw_tank_shade_and_screened_vents_modeled": false,
+    "raw_tank_food_grade_and_outdoor_rating_verified": false,
+    "raw_tank_foundation_capacity_verified": false,
+    "raw_shade_roof_m2_uncredited": 0,
+    "normal_mode": "one 2000L raw tank; operating1800 / design usable1600"
+  },
+  "daily": {
+    "raw_design_l": 70,
+    "ro_feed_l": 22,
+    "ro_product_l": 5.5,
+    "ro_reject_l": 16.5,
+    "other_domestic_l": 44.5,
+    "filter_flush_l": 3.5,
+    "reject_default_destination": "wastewater via air gap; no default garden or raw-tank return",
+    "drain_l_day_budget": 65,
+    "water_quality_test_before_normal_contact_use": true
+  },
+  "nodes": [
+    "rain_source",
+    "refill_source_verified",
+    "first_flush",
+    "pump_P1",
+    "pump_P2",
+    "filters",
+    "misc_buffer",
+    "final_UV",
+    "domestic_taps",
+    "RO",
+    "RO_day",
+    "sealed_drinking",
+    "kitchen_grease_trap",
+    "waste_oil_container",
+    "grey_black_sewer",
+    "septic",
+    "waste_hold",
+    "final_treatment_unverified",
+    "storm_outlet_unverified",
+    "fresh_air",
+    "dedicated_AWG_treatment",
+    "AWG_drinking_tap",
+    "HVAC_condensate",
+    "nonpotable_recovery_60L",
+    "raw_2000L",
+    "irrigation_backflow_filter_regulator",
+    "garden_valves",
+    "garden_drip"
+  ],
+  "edges": [
+    [
+      "rain_source",
+      "first_flush"
+    ],
+    [
+      "first_flush",
+      "raw_2000L"
+    ],
+    [
+      "refill_source_verified",
+      "raw_2000L"
+    ],
+    [
+      "raw_2000L",
+      "pump_P1"
+    ],
+    [
+      "raw_2000L",
+      "pump_P2"
+    ],
+    [
+      "pump_P1",
+      "filters"
+    ],
+    [
+      "pump_P2",
+      "filters"
+    ],
+    [
+      "filters",
+      "misc_buffer"
+    ],
+    [
+      "filters",
+      "final_UV"
+    ],
+    [
+      "final_UV",
+      "domestic_taps"
+    ],
+    [
+      "final_UV",
+      "RO"
+    ],
+    [
+      "RO",
+      "RO_day"
+    ],
+    [
+      "RO",
+      "grey_black_sewer"
+    ],
+    [
+      "domestic_taps",
+      "kitchen_grease_trap"
+    ],
+    [
+      "kitchen_grease_trap",
+      "grey_black_sewer"
+    ],
+    [
+      "kitchen_grease_trap",
+      "waste_oil_container"
+    ],
+    [
+      "domestic_taps",
+      "grey_black_sewer"
+    ],
+    [
+      "grey_black_sewer",
+      "septic"
+    ],
+    [
+      "grey_black_sewer",
+      "waste_hold"
+    ],
+    [
+      "septic",
+      "final_treatment_unverified"
+    ],
+    [
+      "raw_2000L",
+      "storm_outlet_unverified"
+    ],
+    [
+      "fresh_air",
+      "dedicated_AWG_treatment"
+    ],
+    [
+      "dedicated_AWG_treatment",
+      "AWG_drinking_tap"
+    ],
+    [
+      "HVAC_condensate",
+      "nonpotable_recovery_60L"
+    ],
+    [
+      "final_UV",
+      "irrigation_backflow_filter_regulator"
+    ],
+    [
+      "irrigation_backflow_filter_regulator",
+      "garden_valves"
+    ],
+    [
+      "garden_valves",
+      "garden_drip"
+    ]
+  ],
+  "rules": [
+    "Atmospheric miscellaneous buffer is not a pressure vessel and is not RO drinking reserve",
+    "Sealed drinking stock and RO working volume are separately counted; core 30L is included in total 500L",
+    "No direct wastewater/RO reject return to raw storage or food garden",
+    "Storm overflow is separate from septic; final treatment/outfall remains a site condition",
+    "Pipe overlay is schematic and does not certify pipe diameter, slope, pressure or water quality",
+    "AWG guaranteed yield is zero until measured; ordinary AC/dehumidifier condensate is not direct drinking water.",
+    "Only one 2000L raw vessel; operating1800L/designusable1600L; no remaining raw backup tank.",
+    "Record oldest batch and level; sealed drinking and miscellaneous reserve remain independent.",
+    "Food-garden branch is after suitable water treatment, before RO; no untreated bypass, sewage, RO reject or ordinary condensate connection.",
+    "Irrigation is normally closed when unpowered; manual bypass remains downstream of suitable backflow protection/filter/regulator, not a pipe to drinking stock.",
+    "Tank low-level assumption600L closes irrigation, leaving an estimated400L design-usable raw water (about5.7 domestic days); sensor calibration is required.",
+    "Rain main remains higher than tank inlet; first-flush ground module is a drain leg. External fill requires suitable pressure/lift and protected inlet."
+  ],
+  "air_water": {
+    "reference": "Watergen GENNY",
+    "location": "一层客厅东南角，干燥通风位置",
+    "candidate_only": true,
+    "reference_max_l_day": 30,
+    "reference_standard_c": 26.7,
+    "reference_standard_rh_pct": 60,
+    "reference_kwh_l": 0.4,
+    "reference_min_c": 18,
+    "reference_min_rh_pct": 30,
+    "reference_nominal_w": 550,
+    "trial_l_day": 5,
+    "trial_kwh_l": 0.6,
+    "trial_extra_kwh_day": 3,
+    "default_enabled": false,
+    "guaranteed_l_day": 0,
+    "site_yield_verified": false,
+    "source": "https://watergen.com/product-page-genny/",
+    "ordinary_condensate_potable": false,
+    "recovery_container_nominal_l": 60,
+    "recovery_container_initial_l": 0,
+    "water_budget_credit": 0,
+    "note": "饮水级成套机与普通除湿冷凝回收分开；温湿度、换气、滤材消毒与实测决定可用量。应急减载先停制水，改封装饮水。"
+  },
+  "septic": {
+    "nominal_liquid_m3": 5,
+    "geometry_liquid_m3": 5.0085,
+    "external_m": [
+      3.2,
+      1.7,
+      1.925
+    ],
+    "bottom_z_m": -1.975,
+    "liquid_depth_m_assumed": 1.325,
+    "compartments": 3,
+    "inspection_covers": 3,
+    "cover_z_top_m": 0.028,
+    "site_design_verified": false,
+    "outlet_required": true,
+    "sealed_hold_only_days_at65L": 76.92307692307692,
+    "maintenance": "inspect sludge/scum and outlet; 3–5year household pump interval is reference, not guarantee",
+    "source": "https://www.epa.gov/septic/how-care-your-septic-system"
+  },
+  "irrigation": {
+    "beds": 3,
+    "net_each_m2": 3.42,
+    "design_l_m2_day": 4,
+    "design_total_l_day": 41.04,
+    "candidate_emitters_each_bed": 12,
+    "candidate_emitter_l_h": 2,
+    "all_beds_flow_l_h": 72,
+    "calculated_minutes_at_design_demand": 34.2,
+    "timer_trial_minutes": 35,
+    "qualified_water_only": true,
+    "raw_direct_bypass": false,
+    "backflow_device_selection_verified": false,
+    "filter_pressure_rating_verified": false,
+    "pump_low_flow_verified": false,
+    "pressure_buffer_candidate_l": 8,
+    "additional_water_reserve_credit_l": 0,
+    "low_tank_stop_threshold_l_assumed": 600,
+    "low_tank_threshold_is_design_assumption": true
+  }
+}

@@ -1,0 +1,640 @@
+{
+  "version": "R3.4_EDGE_EQUIPMENT_AND_EV",
+  "days": 730,
+  "person": 1,
+  "cat_count": 0,
+  "dog_count": 1,
+  "dog": {
+    "weight_kg_assumed": 10,
+    "daily_kcal_assumed": 600
+  },
+  "site_width_m": 21,
+  "site_depth_m": 20,
+  "site_area_m2": 420,
+  "user_site_limit_m2": 420,
+  "house_footprint_m2": 90,
+  "house_floors": 2,
+  "house_floor_area_gross_m2": 180,
+  "service_block_footprint_m2": 24,
+  "required_crop_area_m2": 0,
+  "optional_garden_area_m2": 10.26,
+  "garden_enabled": true,
+  "orchard_area_m2": 0,
+  "poultry_count": 0,
+  "livestock_count": 0,
+  "guaranteed_crop_kcal": 0,
+  "human_daily_kcal_assumed": 2400,
+  "human_food_target_kcal": 2014799.9999999998,
+  "human_ambient_food": [
+    [
+      "大米",
+      190,
+      3600
+    ],
+    [
+      "燕麦",
+      60,
+      3800
+    ],
+    [
+      "面食",
+      60,
+      3500
+    ],
+    [
+      "干豆",
+      45,
+      3300
+    ],
+    [
+      "食用油",
+      35,
+      8840
+    ],
+    [
+      "坚果",
+      25,
+      6000
+    ],
+    [
+      "肉鱼豆罐头",
+      50,
+      1300
+    ],
+    [
+      "冻干果蔬",
+      30,
+      3000
+    ],
+    [
+      "奶粉/强化替代品",
+      20,
+      5000
+    ],
+    [
+      "糖/蜂蜜",
+      10,
+      4000
+    ]
+  ],
+  "human_ambient_food_kg": 525,
+  "human_ambient_food_kcal": 2024900,
+  "cold_stock": {
+    "meat_kg": 80,
+    "freezers_count": 2,
+    "each_nominal_l": 350,
+    "estimated_loaded_l": 476.0,
+    "available_l_after_20pct_headroom": 560,
+    "n_plus_one": true,
+    "seafood_kg": 20,
+    "frozen_prepared_food_kg": 35,
+    "vegetables_fruit_kg": 25,
+    "dairy_dessert_kg": 10,
+    "bakery_kg": 10,
+    "ice_cream_kg": 10,
+    "primary_storage": "powered walk-in freezer",
+    "freezers_role": "two empty tested transfer backups",
+    "n_plus_one_scope": "cold room failure, both transfer freezers and their independent circuits available",
+    "packaging_l_per_kg_assumed": [
+      [
+        "原切肉",
+        80,
+        1.7
+      ],
+      [
+        "鱼虾",
+        20,
+        2
+      ],
+      [
+        "速冻半成品",
+        35,
+        3
+      ],
+      [
+        "蔬果",
+        25,
+        3
+      ],
+      [
+        "奶酪/甜品",
+        10,
+        2
+      ],
+      [
+        "面包烘焙",
+        10,
+        8
+      ],
+      [
+        "冰淇淋",
+        10,
+        2
+      ]
+    ],
+    "actual_pack_test_verified": false
+  },
+  "pet_stock_kcal": 503699.99999999994,
+  "pet_food_format": {
+    "first_year_complete_dry_kg": 71.95714285714286,
+    "second_year_complete_wet_kg": 251.84999999999997,
+    "wet_kcal_kg_assumed": 1000,
+    "actual_mass_kg": 323.8071428571428,
+    "packaged_l_assumed": 515.6928571428571,
+    "batch_expiry_verified": false
+  },
+  "raw_water_m3": 2,
+  "raw_tanks": 1,
+  "each_raw_tank_m3": 2,
+  "drinking_buffer_l": 500,
+  "domestic_net_l_per_day": 50,
+  "domestic_raw_l_per_day": 70,
+  "ro_product_l_per_day": 5.5,
+  "ro_recovery_assumed": 0.25,
+  "water_stress_mode": "one tank1600L usable; no second raw tank",
+  "drought_irrigation_m3_per_day": 0.04104,
+  "roof_catchment_m2_assumed": 114,
+  "rain_mm_year_assumed": 1500,
+  "rain_capture_efficiency_assumed": 0.75,
+  "annual_roof_collection_m3_assumed": 128.25,
+  "fixed_water_source_verified": false,
+  "water_buffer_days": 22.857142857142858,
+  "pv_modules": 46,
+  "pv_module_wp_assumed": 200,
+  "pv_kwp": 9.2,
+  "pv_module_area_m2_assumed": 0.964168,
+  "battery_nameplate_kwh": 172.8,
+  "battery_usable_ac_kwh": 124.416,
+  "pc_daily_kwh": 4.8,
+  "pc_hours_daily": 12,
+  "seasonal_daily_kwh": {
+    "mild": 15.85,
+    "wet": 17.35,
+    "summer": 24.85,
+    "winter": 21.85,
+    "extreme": 33.85,
+    "essential": 7.5
+  },
+  "wastewater_l_day_assumed": 65,
+  "septic_nominal_m3_assumed": 5,
+  "septic_final_treatment_verified": false,
+  "emergency_waste_buffer_m3": 0.5,
+  "daily_equipment_check_minutes_assumed": [
+    10,
+    15
+  ],
+  "daily_cleaning_minutes_assumed": [
+    10,
+    20
+  ],
+  "dog_activity_minutes_assumed": [
+    20,
+    40
+  ],
+  "crop_labor_minutes_required": 10,
+  "site_use_note": "21×20m=420m²，用户允许增地后新增东侧3m边带；住宅90m²及内部不变，车库约20.6m²。",
+  "status": "R3.4：设备沿边，单2000L原水罐、冷库靠东墙、收纳维修台和直入电车库；住宅内部保持现状。",
+  "cold_room": {
+    "external_m": [
+      2.4,
+      1.8,
+      2.64
+    ],
+    "footprint_m2": 4.32,
+    "internal_clear_m_assumed": [
+      2.0,
+      1.4,
+      2.0
+    ],
+    "storage_setpoint_c": -18,
+    "unpowered_long_term": false,
+    "normal_daily_kwh_assumed": 6,
+    "summer_daily_kwh_assumed": 9,
+    "extreme_daily_kwh_assumed": 12,
+    "metered": false,
+    "thermal_design_certified": false,
+    "guaranteed_unpowered_holdover_h": null,
+    "door_inside_manual_release": true,
+    "independent_temperature_sensors": 2,
+    "shared_generator_failure_possible": true
+  },
+  "chilled_treats": {
+    "initial_stock_kg_assumed": 10,
+    "temperature_c_max": 4,
+    "counted_as_730_day_food": false,
+    "consume_by": "actual SKU label; early priority only"
+  },
+  "spares_inventory": "spares.json",
+  "spare_pv_wp": 800,
+  "spare_battery_kwh": 9.6,
+  "security_daily_kwh_assumed": 0.15,
+  "security_allocation": "0.15kWh/day explicit separate line in the 15.8kWh mild-weather ledger",
+  "cold_energy_note": "冷库6kWh/日；全屋正常温和15.8、夏季24.8、极端33.8kWh/日，包括20L热水机0.8kWh/日。均待实测，非设备保证。",
+  "built_footprint_total_m2": 138.9184,
+  "security_operation": "low-power door sensors continuously; cameras/event recording on demand; not three-camera 24/7 recording",
+  "solo": {
+    "daily_core_gross_m2_approx": 69,
+    "ground_floor_temporary_sleep": true,
+    "ready_food_days": 3,
+    "ready_food_energy_is_allocated_from_existing_stock": true,
+    "drinking_allocation_l": {
+      "sealed_main": 450,
+      "ground_core": 20,
+      "upper_bedside": 10,
+      "ro_day": 20,
+      "total": 500
+    },
+    "house_exits": 2,
+    "yard_exits": 2,
+    "side_gate_y_m": 9.8,
+    "first_aid_locations": 3,
+    "independent_battery_alarms": 6,
+    "max_required_daily_stair_trips_in_reduced_mobility_mode": 0,
+    "emergency_separate_pack_kwh": 1.5,
+    "pack_usable_ac_kwh_assumed": 1.08,
+    "continuous_camera_recording": false
+  },
+  "contingency": {
+    "coldroom_transfer_daily_kwh_assumed": 4.5,
+    "transfer_initial_cooling_kwh_allowance_assumed": 6,
+    "measured": false,
+    "zero_pv_test_days": 7,
+    "require_initial_full_battery": true,
+    "food_zones_allocation": [
+      0.45,
+      0.45,
+      0.1
+    ],
+    "max_guaranteed_survival_probability": null,
+    "monitoring_budget_event_mode_kwh_day": 0.15
+  },
+  "garden": {
+    "bed_count": 3,
+    "net_bed_m2": 10.26,
+    "zone_including_paths_m2": 29.64,
+    "bed_width_m": 0.9,
+    "aisle_m": 0.71,
+    "initial_active_beds_recommended": 2,
+    "irrigation_design_l_m2_day": 4,
+    "irrigation_stress_l_m2_day": 6,
+    "daily_irrigation_l_assumed": 41.04,
+    "daily_pump_kwh_allowance": 0.02,
+    "power_allocation": "part of existing auxiliary allowance, not extra free energy",
+    "crop_kcal_credited": 0,
+    "maintenance_minutes_day_assumed": [
+      10,
+      20
+    ],
+    "weekly_task_hours_assumed": [
+      1,
+      2
+    ],
+    "sunlight_measured": false,
+    "winter_shading_expected": true,
+    "soil_volume_m3_approx": 4.4118,
+    "daily_care_minutes_assumed": [
+      10,
+      20
+    ],
+    "weekly_work_hours_assumed": [
+      1,
+      2
+    ]
+  },
+  "roof_access": {
+    "house_added_fixed_steps": 20,
+    "house_step_rise_m": 0.168,
+    "house_step_tread_m": 0.27,
+    "porch_fixed_steps": 18,
+    "porch_roof_m2": 57.27,
+    "service_roof_from_upper_floor": true,
+    "service_connection_steps": 3,
+    "roof_guard_m": 1.1,
+    "material_hoists": 0,
+    "rated_capacity_verified": false,
+    "minimum_design_walkway_m": 0.8,
+    "pv_reduction_reason": "retain fixed stairs, access and service aisles; original 29 packed panels replaced by actual solver arrangement",
+    "panel_transport": "small module upright via fixed stairs, physical rehearsal required"
+  },
+  "raw_water_operating_m3": 1.8,
+  "raw_water_usable_m3": 1.6,
+  "future_canopy_rain_catchment_m2_uncredited": 57.27,
+  "water_storage": {
+    "raw_nominal_l": 2000,
+    "raw_operating_l": 1800,
+    "raw_usable_l_design": 1600,
+    "raw_each_operating_l": [
+      1800
+    ],
+    "raw_each_usable_l_design": [
+      1600
+    ],
+    "misc_buffer_nominal_l": 500,
+    "misc_buffer_operating_l": 300,
+    "misc_buffer_gravity_usable_l_approx": 230,
+    "sealed_drinking_main_l": 450,
+    "sealed_drinking_core_l": 20,
+    "sealed_drinking_upper_l": 10,
+    "ro_day_l": 20,
+    "drinking_total_l": 500,
+    "sealed_drinking_total_l": 480,
+    "planned_initial_water_stored_l": 2600,
+    "tank_and_water_quality_verified": false,
+    "first_flush_and_rain_capture_final_design_verified": false,
+    "raw_tank_shade_and_screened_vents_modeled": false,
+    "raw_tank_food_grade_and_outdoor_rating_verified": false,
+    "raw_tank_foundation_capacity_verified": false,
+    "raw_shade_roof_m2_uncredited": 0,
+    "normal_mode": "one 2000L raw tank; operating1800 / design usable1600"
+  },
+  "water_daily_balance": {
+    "raw_design_l": 70,
+    "ro_feed_l": 22,
+    "ro_product_l": 5.5,
+    "ro_reject_l": 16.5,
+    "other_domestic_l": 44.5,
+    "filter_flush_l": 3.5,
+    "reject_default_destination": "wastewater via air gap; no default garden or raw-tank return",
+    "drain_l_day_budget": 65,
+    "water_quality_test_before_normal_contact_use": true
+  },
+  "wastewater": {
+    "septic_nominal_m3": 5,
+    "emergency_hold_nominal_l": 500,
+    "emergency_hold_design_usable_l": 450,
+    "normal_waste_l_day_budget": 65,
+    "emergency_days_approx": 6.923076923076923,
+    "final_treatment_verified": false,
+    "roof_overflow_to_septic": false,
+    "kitchen_grease_separate_collection": true,
+    "greywater_default_food_garden_reuse": false,
+    "typical_pump_reference_years": [
+      3,
+      5
+    ],
+    "maintenance_interval_guaranteed": false,
+    "liquid_retained_forever": false,
+    "emergency_hold_xy_m": [
+      6.6,
+      3.2
+    ]
+  },
+  "power_loads_detailed": [
+    [
+      "电脑与显示器",
+      4.8
+    ],
+    [
+      "主冷库",
+      6.0
+    ],
+    [
+      "厨房冰箱",
+      0.7
+    ],
+    [
+      "做饭烧水",
+      1.2
+    ],
+    [
+      "普通照明",
+      0.25
+    ],
+    [
+      "供水泵与RO",
+      0.2
+    ],
+    [
+      "UV持续运行留量",
+      0.36
+    ],
+    [
+      "事件观察与控制",
+      0.15
+    ],
+    [
+      "小菜床泵",
+      0.02
+    ],
+    [
+      "通风",
+      0.2
+    ],
+    [
+      "小设备充电",
+      0.08
+    ],
+    [
+      "温和天气除湿",
+      0.6
+    ],
+    [
+      "清洁波动与辅助留量",
+      0.44
+    ],
+    [
+      "20L小热水器日预算",
+      0.8
+    ],
+    [
+      "充电桩待机假设",
+      0.05
+    ]
+  ],
+  "hot_water": {
+    "nominal_l": 20,
+    "heater_daily_kwh_assumed": 0.8,
+    "emergency_mode_off": true,
+    "actual_product_and_protection_verified": false
+  },
+  "pv_module_wp": 200,
+  "spare_pv_modules": 4,
+  "spare_pv_kwp": 0.8,
+  "pv_module_reference": {
+    "model": "Renogy RSP200DC-ASR-G1",
+    "wp": 200,
+    "dimensions_m": [
+      1.262,
+      0.764,
+      0.03
+    ],
+    "mass_kg": 10.81,
+    "role": "dimensional reference only; complete electrical and structural design not selected",
+    "source": "https://www.renogy.com/cdn/shop/files/RSP200DC-ASR-G1-datasheet_2.pdf?v=14334340797311158899"
+  },
+  "drinking_buffer_distribution": {
+    "sealed_main_l": 450,
+    "sealed_core_l": 20,
+    "sealed_upper_l": 10,
+    "ro_day_l": 20,
+    "total_l": 500
+  },
+  "drinking_buffer_note": "480L封装＋20L日用RO，含一层20L和上层10L；300L杂用备用另列。",
+  "pv_total_module_area_m2": 44.352,
+  "rooms": {
+    "private_suite": "northwest-side bed, south computer desk, east wardrobe, independent east hall door",
+    "former_gaming_room": "reading/activity/temporary rest, independent hall door",
+    "bed_centre_xy_m": [
+      1.95,
+      12.55
+    ],
+    "pc_desk_reference_xy_m": [
+      2.9,
+      9.8
+    ],
+    "sleep_and_pc_same_room": true,
+    "new_partitions_are_layout_concepts_not_structural_certification": true
+  },
+  "battery_system": {
+    "modules": 36,
+    "module_kwh": 4.8,
+    "cabinets": 3,
+    "modules_per_cabinet": 12,
+    "group_nominal_kwh": 57.6,
+    "dod_assumed": 0.8,
+    "ac_efficiency_assumed": 0.9,
+    "module_reference": "Pylontech US5000 dimensional/weight reference only",
+    "module_dimensions_m": [
+      0.442,
+      0.42,
+      0.161
+    ],
+    "module_mass_kg": 39.7,
+    "total_module_mass_kg": 1429.2,
+    "reference_single_string_limit": 16,
+    "complete_system_selected": false,
+    "foundation_verified": false,
+    "location": "住宅东侧水电间的西半干电间，北墙三柜，地面层",
+    "front_service_strip_m": 1.1,
+    "source": "https://en.pylontech.com.cn/products/c23/134.html"
+  },
+  "perimeter": {
+    "body_height_m": 3.2,
+    "cap_top_m": 3.28,
+    "footprint_width_m": 0.22,
+    "outer_gate_leaf_height_m": 2.98,
+    "inner_gate_leaf_height_m": 2.8,
+    "side_gate_leaf_height_m": 2.68,
+    "manual_egress": true,
+    "entry_offset_screen_height_m": 2.5,
+    "structural_or_impact_rating_verified": false
+  },
+  "air_water": {
+    "reference": "Watergen GENNY",
+    "location": "一层客厅东南角，干燥通风位置",
+    "candidate_only": true,
+    "reference_max_l_day": 30,
+    "reference_standard_c": 26.7,
+    "reference_standard_rh_pct": 60,
+    "reference_kwh_l": 0.4,
+    "reference_min_c": 18,
+    "reference_min_rh_pct": 30,
+    "reference_nominal_w": 550,
+    "trial_l_day": 5,
+    "trial_kwh_l": 0.6,
+    "trial_extra_kwh_day": 3,
+    "default_enabled": false,
+    "guaranteed_l_day": 0,
+    "site_yield_verified": false,
+    "source": "https://watergen.com/product-page-genny/",
+    "ordinary_condensate_potable": false,
+    "recovery_container_nominal_l": 60,
+    "recovery_container_initial_l": 0,
+    "water_budget_credit": 0,
+    "note": "饮水级成套机与普通除湿冷凝回收分开；温湿度、换气、滤材消毒与实测决定可用量。应急减载先停制水，改封装饮水。"
+  },
+  "septic": {
+    "nominal_liquid_m3": 5,
+    "geometry_liquid_m3": 5.0085,
+    "external_m": [
+      3.2,
+      1.7,
+      1.925
+    ],
+    "bottom_z_m": -1.975,
+    "liquid_depth_m_assumed": 1.325,
+    "compartments": 3,
+    "inspection_covers": 3,
+    "cover_z_top_m": 0.028,
+    "site_design_verified": false,
+    "outlet_required": true,
+    "sealed_hold_only_days_at65L": 76.92307692307692,
+    "maintenance": "inspect sludge/scum and outlet; 3–5year household pump interval is reference, not guarantee",
+    "source": "https://www.epa.gov/septic/how-care-your-septic-system"
+  },
+  "courtyard": {
+    "clear_activity_rectangle_m": [
+      11.35,
+      10.6,
+      18.0,
+      14.4
+    ],
+    "clear_activity_m2": 25.27,
+    "permanent_furniture_in_activity_zone": false,
+    "equipment_visible_at_edge": true,
+    "house_interior_changed": false,
+    "cold_room_outer_m": [
+      18.76,
+      6.61,
+      20.78,
+      9.23
+    ],
+    "cold_condenser_reference_rear_clearance_m": 0.335,
+    "maintenance_clearances_need_selected_product": true,
+    "cart_storage": "folded under repair bench right bay",
+    "laundry": "west rear wall cassette, retracted by default",
+    "garage_pedestrian_aisle_min_m": 1.39,
+    "garage_pedestrian_aisle_local_clear_m": 1.05
+  },
+  "garage": {
+    "gross_footprint_m2": 20.5984,
+    "outer_m": [
+      17.5,
+      0.22,
+      20.78,
+      6.5
+    ],
+    "nominal_clear_m": [
+      3.17,
+      6.17,
+      2.88
+    ],
+    "vehicle_gate_clear_m": 2.9,
+    "vehicle_reference_m": [
+      4.0,
+      1.84,
+      1.54
+    ],
+    "actual_vehicle_selected": false,
+    "evse_max_kw_candidate": 7,
+    "min_surplus_kw_reference": 1.4,
+    "daily_ac_limit_kwh_default": 2,
+    "assumed_ac_to_battery_efficiency": 0.85,
+    "home_storage_reserve_first": true,
+    "surplus_metering_required": true,
+    "car_battery_counted_as_home_storage": false,
+    "charger_and_inverter_selected": false,
+    "evse_standby_daily_kwh_assumed": 0.05,
+    "source": "https://support.myenergi.com/hc/en-gb/articles/15587880239249-What-is-the-Minimum-Green-Level-MGL"
+  },
+  "irrigation": {
+    "beds": 3,
+    "net_each_m2": 3.42,
+    "design_l_m2_day": 4,
+    "design_total_l_day": 41.04,
+    "candidate_emitters_each_bed": 12,
+    "candidate_emitter_l_h": 2,
+    "all_beds_flow_l_h": 72,
+    "calculated_minutes_at_design_demand": 34.2,
+    "timer_trial_minutes": 35,
+    "qualified_water_only": true,
+    "raw_direct_bypass": false,
+    "backflow_device_selection_verified": false,
+    "filter_pressure_rating_verified": false,
+    "pump_low_flow_verified": false,
+    "pressure_buffer_candidate_l": 8,
+    "additional_water_reserve_credit_l": 0,
+    "low_tank_stop_threshold_l_assumed": 600,
+    "low_tank_threshold_is_design_assumption": true
+  }
+}

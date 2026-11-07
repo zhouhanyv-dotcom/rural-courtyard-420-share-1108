@@ -1,0 +1,148 @@
+{
+  "version": "R3.4",
+  "pv_kwp": 9.2,
+  "running_battery_kwh": 172.8,
+  "architecture": "three individually protected12-module cabinets, matched approved BMS/parallel system; no direct arbitrary parallel connection",
+  "nodes": [
+    "PV_house",
+    "PV_service",
+    "PV_canopy",
+    "PV_isolation_MPPT",
+    "battery_cabinets",
+    "battery_fuse_disconnect_BMS",
+    "inverter",
+    "main_isolation_meter",
+    "DB",
+    "B1_coldroom",
+    "B2_critical",
+    "B3_water",
+    "B4_living",
+    "B5_flexible",
+    "B6_irrigation",
+    "B7_EV",
+    "B8_spare"
+  ],
+  "edges": [
+    [
+      "PV_house",
+      "PV_isolation_MPPT"
+    ],
+    [
+      "PV_service",
+      "PV_isolation_MPPT"
+    ],
+    [
+      "PV_canopy",
+      "PV_isolation_MPPT"
+    ],
+    [
+      "PV_isolation_MPPT",
+      "inverter"
+    ],
+    [
+      "battery_cabinets",
+      "battery_fuse_disconnect_BMS"
+    ],
+    [
+      "battery_fuse_disconnect_BMS",
+      "inverter"
+    ],
+    [
+      "inverter",
+      "main_isolation_meter"
+    ],
+    [
+      "main_isolation_meter",
+      "DB"
+    ],
+    [
+      "DB",
+      "B1_coldroom"
+    ],
+    [
+      "DB",
+      "B2_critical"
+    ],
+    [
+      "DB",
+      "B3_water"
+    ],
+    [
+      "DB",
+      "B4_living"
+    ],
+    [
+      "DB",
+      "B5_flexible"
+    ],
+    [
+      "DB",
+      "B6_irrigation"
+    ],
+    [
+      "DB",
+      "B7_EV"
+    ],
+    [
+      "DB",
+      "B8_spare"
+    ]
+  ],
+  "branches": [
+    {
+      "id": "B1",
+      "use": "主冷库及独立温度告警",
+      "priority": "基本保冷，独立分路"
+    },
+    {
+      "id": "B2",
+      "use": "转存冰柜、必要照明、通信",
+      "priority": "关键负载，与主冷库分路"
+    },
+    {
+      "id": "B3",
+      "use": "P1/P2供水泵、UV及水处理",
+      "priority": "基本供水，P1/P2一用一备"
+    },
+    {
+      "id": "B4",
+      "use": "生活插座、电脑",
+      "priority": "按需减载"
+    },
+    {
+      "id": "B5",
+      "use": "做饭、热水、空调等大负载",
+      "priority": "分别子回路、互锁限功率"
+    },
+    {
+      "id": "B6",
+      "use": "灌溉控制器/阀门",
+      "priority": "缺水或低SOC停；不能拖停生活泵"
+    },
+    {
+      "id": "B7",
+      "use": "EV充电",
+      "priority": "余电且家用电池达保底才启用"
+    },
+    {
+      "id": "B8",
+      "use": "预留隔离",
+      "priority": "未接负载，不计供电收益"
+    }
+  ],
+  "fault_policy": [
+    "Low SOC pauses EV then irrigation/AWG and flexible loads; keep B1/B2/B3 within measured power limits.",
+    "Separate breakers improve branch isolation but do not remove the shared inverter/BMS supply failure.",
+    "Pump dry-run and leak detection stop affected water branch; no automatic restarting against a known leak.",
+    "UV fault/quality alarm closes the relevant treated-water supply including food garden; use sealed drinking backup."
+  ],
+  "engineering_tbd": [
+    "actual inverter continuous/start power and protection selectivity",
+    "cable type/section and voltage drop from measured lengths and installation",
+    "DC disconnect/fuse interrupt rating and manufacturer BMS cabinet integration",
+    "RCD/RCBO type and EV DC-leakage provisions per chosen products",
+    "surge protection/earthing/equipotential bonding/islanding and optional-grid transfer",
+    "water/electric separation and all crossings/site enclosure ratings"
+  ],
+  "site_commissioned": false
+}
