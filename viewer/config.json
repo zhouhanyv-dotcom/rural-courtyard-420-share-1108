@@ -3,7 +3,7 @@
   "kicker": "RURAL HOME / 2026.11",
   "headline": "一人一狗，日常与应急兼顾。",
   "intro": "420㎡院落，设备沿边布置，中央保留活动空间。住宅、冷库、遮护储水、备件、水电与小电车库组成完整生活方案。",
-  "model": "rural-36.gltf",
+  "model": "rural-36-final.gltf",
   "report": "420平方米庭院与车库.html",
   "views": {
     "overview": {
@@ -955,6 +955,6 @@
       "鲜菜补充不承担主粮；活动和维修空间可以正常使用。"
     ]
   ],
-  "revision": "R3.6-rainfilter-1108",
+  "revision": "R3.6-rainfilter-final-1108",
   "release": "2026.11 正式展示版"
 }
