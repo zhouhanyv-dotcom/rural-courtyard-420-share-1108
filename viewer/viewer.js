@@ -1,5 +1,5 @@
-import {attachEquipment} from './equipment.js?v=first-person-1108';
-import {createWalkAssets,attachWalk} from './walk.js?v=first-person-1108';
+import {attachEquipment} from './equipment.js?v=walk-clearance-1108';
+import {createWalkAssets,attachWalk} from './walk.js?v=walk-clearance-1108';
 import * as T from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';

@@ -22,7 +22,7 @@ export function createWalkAssets(scene){
   if(/(paving joint|PV cell|PV rail|PV leg|cell line|label|ID plate|monitor screen|Book\b|book spine|R3 Bed\d+ (leaf|stem)|seedling|Plant\b|Stem\b|Fruit\b|power cable|wire|pipe|collector|gutter|overflow|vent|drain|shade roof)/i.test(n))return;
   mesh.geometry.computeBoundingBox();const local=mesh.geometry.boundingBox.clone(),size=local.getSize(new T.Vector3());
   if(Math.max(size.x,size.y,size.z)<.085)return;
-  const floor=/^(SITE|Ground floor slab|Upper slab with stair opening|Entry step|Second exit step|Stair [AB] tread|Stair mid landing|Dry energy slab|Clean water slab|Cold room insulated floor|Combined service roof|R34 Garage floor|R34 Social paving|R34 East walk paving|R3 Porch (roof|landing|stair tread)|R3 House roof ring|R3 Roof walk|R3 Roof stair [AB] \d|R3 Roof stair half landing|R3 Service roof step)/i.test(n);
+  const floor=/^(SITE|Ground floor slab|Living rug|Upper slab with stair opening|Entry step|Second exit step|Stair [AB] tread|Stair mid landing|Dry energy slab|Clean water slab|Cold room insulated floor|Combined service roof|R34 Garage floor|R34 Social paving|R34 East walk paving|R3 Porch (roof|landing|stair tread)|R3 House roof ring|R3 Roof walk|R3 Roof stair [AB] \d|R3 Roof stair half landing|R3 Service roof step)/i.test(n);
   const actual=floor||/rail|guard|stringer|landing return|open leaf|Roof access door/i.test(n);
   sources.push({mesh,local,floor,actual});
  }
@@ -47,13 +47,13 @@ export function attachWalk({scene,renderer,host,canvas,assets,setCamera,resize,r
  const R=.24,EYE=1.62,HEIGHT=1.72,STEP=.23,DROP=.34;
  const camera=new T.PerspectiveCamera(70,1,.055,180);camera.rotation.order='YXZ';
  const state={active:false,ready:false,position:new T.Vector3(),yaw:0,pitch:0,locked:false,blocked:false,world:null};
- const keys=new Set(),down=new T.Vector3(0,-1,0),ray=new T.Ray(),normal=new T.Vector3();let world,ground,last=0,raf=0,dirty=false,drag=null,snapshot,shadowAuto=true,auto=null,planning=false;
+ const keys=new Set(),down=new T.Vector3(0,-1,0),ray=new T.Ray(),normal=new T.Vector3();let world,ground,last=0,raf=0,dirty=false,drag=null,snapshot,shadowAuto=true,auto=null,planning=false,blockedTime=0;
  const hud=document.createElement('div');hud.id='walkHud';hud.hidden=true;hud.innerHTML=`<div class="walk-top"><strong>第一视角漫游</strong><span id="walkWhere">院门</span><button id="walkLock">锁定鼠标</button><button id="walkHome">回到院门</button><button id="walkExit">退出漫游</button></div><div class="walk-help"><span id="walkHint">W A S D / 方向键移动 · 拖动转头 · Shift加速 · Esc释放鼠标</span><label>快速到达 <select id="walkVisit"><option value="gate">院门</option><option value="yard">庭院</option><option value="living">一层客厅</option><option value="stairs">楼梯口</option><option value="suite">二层套房</option><option value="roof">住宅屋顶</option><option value="energy">能源房</option><option value="water">净水房</option></select></label><button id="walkTour">自动逛院子</button></div><div class="walk-reticle" aria-hidden="true">＋</div><div class="walk-bottom"><canvas id="walkMap" width="170" height="160" aria-label="院落位置小地图"></canvas><span>院内步行 · 门扇已开启<br>视线高约1.62米</span></div>`;host.append(hud);
  const $=s=>hud.querySelector(s),hint=$('#walkHint'),where=$('#walkWhere'),map=$('#walkMap'),ctx=map.getContext('2d');
  canvas.tabIndex=0;const focusCanvas=()=>canvas.focus({preventScroll:true});
  const visits={
   gate:{pos:[8.3,.03,-5.3],look:[8.3,.03,-9],label:'院门内侧'},yard:{pos:[14,.03,-12],look:[5.5,1,-13],label:'庭院'},
-  living:{pos:[5,.40,-11.5],look:[2.5,1,-11.8],label:'一层客厅'},stairs:{pos:[6,.40,-14.7],look:[6,1,-16.2],label:'一层楼梯口'},
+  living:{pos:[4.25,.45,-11],look:[2.5,1,-11.8],label:'一层客厅'},stairs:{pos:[6,.40,-14.7],look:[6,1,-16.2],label:'一层楼梯口'},
   suite:{pos:[3.6,3.62,-11.6],look:[2,4.4,-12.4],label:'二层套房'},roof:{pos:[4.7,7,-12.1],look:[7,7.8,-14.5],label:'住宅屋顶'},
   energy:{pos:[11.6,.24,-16.1],look:[11.5,1.3,-18.3],label:'能源房'},water:{pos:[14.15,.24,-16.0],look:[14.7,1,-18.2],label:'净水房'}
  };
@@ -161,7 +161,8 @@ export function attachWalk({scene,renderer,host,canvas,assets,setCamera,resize,r
  function frame(now){
   if(!state.active)return;const dt=Math.min(.05,Math.max(.001,(now-last)/1000));last=now;follow(dt);
   let f=(keys.has('KeyW')||keys.has('ArrowUp')?1:0)-(keys.has('KeyS')||keys.has('ArrowDown')?1:0),s=(keys.has('KeyD')||keys.has('ArrowRight')?1:0)-(keys.has('KeyA')||keys.has('ArrowLeft')?1:0);
-  if(f||s){const n=Math.hypot(f,s),speed=keys.has('ShiftLeft')||keys.has('ShiftRight')?2.65:1.55;f/=n;s/=n;move((-Math.sin(state.yaw)*f+Math.cos(state.yaw)*s)*speed*dt,(-Math.cos(state.yaw)*f-Math.sin(state.yaw)*s)*speed*dt)}
+  if(f||s){const n=Math.hypot(f,s),speed=keys.has('ShiftLeft')||keys.has('ShiftRight')?2.65:1.55;f/=n;s/=n;move((-Math.sin(state.yaw)*f+Math.cos(state.yaw)*s)*speed*dt,(-Math.cos(state.yaw)*f-Math.sin(state.yaw)*s)*speed*dt);blockedTime=state.blocked?blockedTime+dt:0}else blockedTime=0;
+  const walkingStatus=blockedTime>.45?'前方受阻，请转向或后退':'院内步行 · 主通行门已开启';if($('.walk-bottom span').firstChild.textContent!==walkingStatus)$('.walk-bottom span').firstChild.textContent=walkingStatus;
   if(dirty){camera.position.x=state.position.x;camera.position.z=state.position.z;camera.position.y=T.MathUtils.lerp(camera.position.y,state.position.y+EYE,Math.min(1,dt*15));camera.rotation.set(state.pitch,state.yaw,0,'YXZ');where.textContent=area();minimap();render();dirty=Math.abs(camera.position.y-state.position.y-EYE)>.001}
   raf=requestAnimationFrame(frame);
  }
