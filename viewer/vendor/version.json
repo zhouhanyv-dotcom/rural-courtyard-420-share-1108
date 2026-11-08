@@ -1,5 +1,14 @@
 {
   "three": "0.180.0",
   "source": "https://www.npmjs.com/package/three/v/0.180.0",
-  "license": "MIT"
+  "license": "MIT",
+  "walking_helpers": {
+    "version": "r180",
+    "files": [
+      "addons/math/Octree.js",
+      "addons/math/Capsule.js"
+    ],
+    "source": "https://github.com/mrdoob/three.js/tree/r180/examples/jsm/math",
+    "license": "MIT"
+  }
 }

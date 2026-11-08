@@ -19,8 +19,9 @@ export async function attachEquipment({base,canvas,host,onView,render}){
  }
  select.onchange=()=>select.value?choose(select.value):clear();
  document.querySelector('#clearEquipment').onclick=clear;
- canvas.addEventListener('pointerdown',e=>start={x:e.clientX,y:e.clientY});
+ canvas.addEventListener('pointerdown',e=>{if(base.walk?.active)return;start={x:e.clientX,y:e.clientY}});
  canvas.addEventListener('pointerup',e=>{
+  if(base.walk?.active){start=null;return}
   if(!start||Math.hypot(e.clientX-start.x,e.clientY-start.y)>5)return;start=null;
   const rect=canvas.getBoundingClientRect();mouse.set((e.clientX-rect.left)/rect.width*2-1,-(e.clientY-rect.top)/rect.height*2+1);ray.setFromCamera(mouse,base.camera);
   const hit=ray.intersectObjects(base.meshes.filter(m=>m.visible&&!m.userData.layers.label&&!m.userData.layers.route&&!m.userData.layers.useOverlay),false)[0];if(!hit)return;
