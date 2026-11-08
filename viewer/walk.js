@@ -120,7 +120,7 @@ export function attachWalk({scene,renderer,host,canvas,assets,setCamera,resize,r
  document.addEventListener('mousemove',e=>{if(state.active&&state.locked)look(e.movementX,e.movementY)});
  document.addEventListener('keydown',e=>{if(!state.active||/INPUT|SELECT|TEXTAREA/.test(e.target.tagName))return;if(['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','ShiftLeft','ShiftRight'].includes(e.code)){e.preventDefault();keys.add(e.code);stopTour()}if(e.code==='KeyR'){e.preventDefault();locate('gate')}if(e.code==='Escape'){keys.clear();stopTour()}});
  document.addEventListener('keyup',e=>keys.delete(e.code));window.addEventListener('blur',()=>{keys.clear();drag=null;stopTour()});document.addEventListener('visibilitychange',()=>{if(document.hidden){keys.clear();stopTour()}});
- function stopTour(){auto=null;planning=false;$('#walkTour').textContent='自动逛院子'}
+ function stopTour(){const wasRunning=!!auto||planning;auto=null;planning=false;$('#walkTour').textContent='自动逛院子';if(wasRunning)hint.textContent='导览已停止，可自由走动 · 拖动转头 · R回到院门'}
  // Outdoor guidance uses the same capsule and support tests as manual walking.
  async function planPath(start,end){
   const cell=.30,key=(i,j)=>i+','+j,cache=new Map(),nodes=new Map(),closed=new Set(),open=[];
